@@ -62,15 +62,18 @@ img, source {
   position: absolute;
 }
 
+.action-article-link:hover {
+  color:#8b0000;
+}
+
 
 /* ======== COMMON STYLES ======== */
 
-.sport-article-link:hover,
-.action-article-link:hover {
-  color: #8B0000;
+body {
+  min-width: 320px;
 }
 
-.logo-text:hover {
+.logo-text-link:hover {
   transform: scale(1.2)
 }
 
@@ -102,7 +105,7 @@ img, source {
 }
 
   /* ======== header ======== */
-.logo-text {
+.logo-text-link {
   display: block;
   fill: #ffffff;
 }
@@ -157,11 +160,11 @@ img, source {
   text-transform: uppercase;
 }
 
-.sport-article-2 {
+.sport-article-collaboration {
   background-color: #f5f3f9;
 }
 
-.sport-article-3 {
+.sport-article-growth {
   background-color: #5d41b0;
 }
 
@@ -188,7 +191,7 @@ img, source {
   color: #8765dd;
 } 
 
-.sport-article-link {
+.sport-article-title {
   color: #c1c1c1;
   font-weight: bold;
   text-transform: uppercase;
@@ -225,7 +228,7 @@ img, source {
   text-transform: uppercase;
 }
 
-.footer-content .logo-text {
+.footer-content .logo-text-link {
   margin-bottom: 0;
 }
 
@@ -245,7 +248,7 @@ img, source {
     padding: 30px 0 80px;
   }
 
-  .logo-text {
+  .logo-text-link {
     margin: 0 auto 130px;
     width: 135px;  
   }
@@ -277,31 +280,19 @@ img, source {
     margin-bottom: 15px;
   }
 
-  .sport {
-    position: relative;
-  }
-  
-  .athlets .sport-picture {
-    position: absolute;
-    top: 80px;
-    right: calc(50% - 95px);
-  }
-  
-  .players .sport-picture {
-    position: absolute;
-    top: 90px;
-    right: calc(50% - 150px);
+  .sport-title {
+    font-size: 50px;
   }
 
-  .sport-title {
-    margin-bottom: 210px;
-    font-size: 50px;
+  .sport-picture {
+    margin: 50px auto -50px;
   }
   
   .sport-article-title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 23px;
   }
 
   .sport-article-number {
@@ -311,17 +302,13 @@ img, source {
     font-weight: bold;
   }
 
-   .sport-article-number::after {
+  .sport-article-number::after {
     content: "";
     display: block;
     width: 16px;
     height: 4px;
     border-radius: 1px;
     background-color: #5d41b0;
-  }
-
-  .sport-article-link {
-    font-size: 23px;
   }
 
   .sport-article-text > p {
@@ -333,14 +320,14 @@ img, source {
     margin-top: 20px;
   }
 
-  .sport-article-1 {
+  .sport-article-connection {
     padding-top: 80px;
     padding-bottom: 50px;
 	  background-color: #f9f9f9;
   }
   
-  .sport-article-2,
-  .sport-article-3 {
+  .sport-article-collaboration,
+  .sport-article-growth {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -442,7 +429,7 @@ img, source {
     padding: 35px 0 90px;
   }
 
-  .logo-text {
+  .logo-text-link {
     margin: 0 auto 170px;
     width: 200px;  
   }
@@ -454,11 +441,7 @@ img, source {
     letter-spacing: 3px;
     
   }
-  .header-title-1 {
-    margin-bottom: 20px;
-    
-  }
-
+  
   .header-title-2 {
     max-width: 85%;
     line-height: 80px;
@@ -487,6 +470,7 @@ img, source {
 
   .sport {
     position: relative;
+    padding-top: 70px;
   }
 
   .athlets .content-wrapper,
@@ -511,7 +495,7 @@ img, source {
   }
 
   .sport-title {
-    padding: 70px 30px 10px;
+    padding: 0 30px 10px;
     font-size: 80px;
   }
   
@@ -519,6 +503,7 @@ img, source {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 32px;
   }
 
   .sport-article-number {
@@ -537,10 +522,6 @@ img, source {
     background-color: #5d41b0;
   }
 
-  .sport-article-link {
-    font-size: 32px;
-  }
-
   .sport-article-text > p {
     font-size: 16px;
     line-height: 28px;
@@ -550,9 +531,9 @@ img, source {
     margin-top: 20px;
   }
 
-  .sport-article-1,
-  .sport-article-2,
-  .sport-article-3 {
+  .sport-article-connection,
+  .sport-article-collaboration,
+  .sport-article-growth {
     padding-top: 30px;
     padding-bottom: 40px;
   }
@@ -646,6 +627,7 @@ img, source {
   .content-wrapper {
     max-width: 1920px;
     padding: 0 10vw; /*190px*/
+    margin: auto;
   }
 
   .action   {
@@ -666,14 +648,14 @@ img, source {
     padding: 40px 0 100px;
   }
 
-  .logo-text {
+  .logo-text-link {
     margin: 0 auto 270px;
     width: 200px;  
   }
 
   .header-title {
     margin-bottom: 210px;
-    font-size: 90px;
+    font-size: 4.5vw; /*90px*/
   }
 
   .download-buttons {
@@ -700,6 +682,7 @@ img, source {
 
   .sport {
     position: relative;
+    padding-top: 100px;
   }
 
   .athlets .content-wrapper {
@@ -722,39 +705,35 @@ img, source {
   .players .sport-picture {
     position: absolute;
 	  top: 50px;
-    right: 25%;
+    left: 42%;
   }
 
   .sport-title {
-    padding-top: 100px;
     padding-bottom: 30px;
-    font-size: 80px;
+    font-size: 4vw; /*80px*/
   }
   
   .sport-article-title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 2vw; /*36px;*/
   }
 
   .sport-article-number {
     margin-right: 10px;
-    font-size: 24px;
+    font-size: 1.2vw; /*24px;*/
     color: #000000;
     font-weight: bold;
   }
 
-   .sport-article-number::after {
+  .sport-article-number::after {
     content: "";
     display: block;
-    width: 21px;
+    width: 1.5vw; /*27px;*/
     height: 5px;
     border-radius: 1px;
     background-color: #5d41b0;
-  }
-
-  .sport-article-link {
-    font-size: 36px;
   }
 
   .sport-article-text > p {
@@ -766,9 +745,9 @@ img, source {
     margin-top: 25px;
   }
 
-  .sport-article-1,
-  .sport-article-2,
-  .sport-article-3 {
+  .sport-article-connection,
+  .sport-article-collaboration,
+  .sport-article-growth {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -805,7 +784,7 @@ img, source {
   }
 
   .action-article-link {
-    font-size: 80px;
+    font-size: 4vw; /*80px*/
   }
 
   .action-article-text > p {
@@ -819,12 +798,12 @@ img, source {
 
   .action-article:nth-of-type(odd) .box {
     left: -10vw; /*-85px;*/
-    /*top: 10vw; /*200px;*/*/
+    top: -1vw;
   }
 
   .action-article:nth-of-type(even) .box {
     right: -10vw; /*-85px;*/
-    /*top: 10vw; /*200px;*/*/
+    top: -1vw;
   }
 
   .action-article-title {
@@ -841,7 +820,7 @@ img, source {
   
   .box-number {
     margin: auto;
-    font-size: 24px;
+    font-size: 1.2vw; /*24px;*/
     font-weight: bold;
     color: #f5f6f7; 
   }
@@ -849,7 +828,7 @@ img, source {
   .box-number::after {
     content: "";
     display: block;
-    width: 24px;
+    width: 1.5vw; /*27px;*/
     height: 5px;
     border-radius: 1px;
     background-color: #8f7bc8;
@@ -879,11 +858,11 @@ img, source {
   }
 
   .footer-title {
-    font-size: 80px;
+    font-size: 4vw; /*80px*/
   }
 
   .slogan {
-    font-size: 30px;
+    font-size: 1.6vw; /*30px*/
   }
 
   .footer-content .download-buttons {
