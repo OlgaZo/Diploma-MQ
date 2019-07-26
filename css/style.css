@@ -704,7 +704,7 @@ body {
   
   .players .sport-picture {
     position: absolute;
-	  top: 50px;
+	  top: -10px;
     left: 42%;
   }
 
