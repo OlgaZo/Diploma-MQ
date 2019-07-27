@@ -55,18 +55,6 @@ img, source {
   display: block; 
 }
 
-.visually-hidden {
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute;
-}
-
-.action-article-link:hover {
-  color:#8b0000;
-}
-
-
 /* ======== COMMON STYLES ======== */
 
 body {
@@ -201,7 +189,7 @@ body {
   max-width: 100%;
 }
 
-.action-article-link {
+.action-article-title {
   color: #e7e7e7;
   font-weight: bold;
   text-transform: uppercase;
@@ -305,7 +293,6 @@ body {
   .sport-article-number::after {
     content: "";
     display: block;
-    width: 16px;
     height: 4px;
     border-radius: 1px;
     background-color: #5d41b0;
@@ -340,9 +327,6 @@ body {
 
   .action-article-title {
     margin-bottom: 20px;
-  }
-
-  .action-article-link {
     font-size: 28px;
   }
 
@@ -374,7 +358,6 @@ body {
   .box-number::after {
     content: "";
     display: block;
-    width: 16px;
     height: 4px;
     border-radius: 1px;
     background-color: #8f7bc8;
@@ -396,7 +379,7 @@ body {
     border-radius: 15px;  
   }
 
-  .footer-text {
+  .footer-head {
     margin-bottom: 70px;
     text-align: center;
   }
@@ -516,7 +499,6 @@ body {
    .sport-article-number::after {
     content: "";
     display: block;
-    width: 20px;
     height: 4px;
     border-radius: 1px;
     background-color: #5d41b0;
@@ -546,9 +528,6 @@ body {
 
   .action-article-title {
     margin-bottom: 25px;
-  }
-
-  .action-article-link {
     font-size: 80px;
   }
 
@@ -580,7 +559,6 @@ body {
   .box-number::after {
     content: "";
     display: block;
-    width: 25px;
     height: 5px;
     border-radius: 1px;
     background-color: #8f7bc8;
@@ -603,7 +581,7 @@ body {
     border-radius: 25px;  
   }
 
-  .footer-text {
+  .footer-head {
     margin-bottom: 280px;
     text-align: center;
   }
@@ -730,7 +708,6 @@ body {
   .sport-article-number::after {
     content: "";
     display: block;
-    width: 1.5vw; /*27px;*/
     height: 5px;
     border-radius: 1px;
     background-color: #5d41b0;
@@ -754,6 +731,7 @@ body {
 
   .action-article {
     display: flex;
+    position: relative;
   }
 
   .action-article:nth-of-type(even) {
@@ -781,9 +759,6 @@ body {
 
   .action-article-title {
     margin-bottom: 4.5vw; /*90px;*/
-  }
-
-  .action-article-link {
     font-size: 4vw; /*80px*/
   }
 
@@ -797,18 +772,18 @@ body {
   }
 
   .action-article:nth-of-type(odd) .box {
-    left: -10vw; /*-85px;*/
-    top: -1vw;
+    left: calc(50% - 4.4vw);
+    top: calc(50% - 4vw);
   }
 
   .action-article:nth-of-type(even) .box {
-    right: -10vw; /*-85px;*/
-    top: -1vw;
+    right: calc(50% - 4.4vw); 
+    top: calc(50% - 4vw);
   }
 
-  .action-article-title {
+  /*.action-article-title {
     position: relative;
-  }
+  }*/
 
   .box {
     display: flex;
@@ -828,7 +803,6 @@ body {
   .box-number::after {
     content: "";
     display: block;
-    width: 1.5vw; /*27px;*/
     height: 5px;
     border-radius: 1px;
     background-color: #8f7bc8;
